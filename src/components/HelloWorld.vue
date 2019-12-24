@@ -15,18 +15,13 @@
       </el-col>
     </el-row>
 
-    <table>
-      <thead>
-        <td>qdw</td>
-        <td>qd</td>
-        <td>qwef</td>
-      </thead>
-      <tr>
-        <td v-for='(index,item) in items'>{{}}</td>
-      </tr>
-    </table>
-      
-    </table>
+    <ul>
+      <li>姓名 -- 年龄 -- 邮箱</li>
+      <li v-for="(item,index) in items">{{ item.name }} -- {{item.age}} -- {{item.mail}}  <button @click="remove(index)">点击删除</button></li> 
+    </ul>
+    <input type="text"/> <input type="number" name="" id=""> <input type="email" name="" id="">
+       
+
   </div>
 </template>
 
@@ -39,10 +34,16 @@ export default {
   data(){
     return{
       items:[
-        {name:'zhangsan',age:11,mail:'123#123.com'},
+        {name:'zhangsan',age:11,mail:'123@123.com'},
         {name:'lisi',age:12,mail:'456@123.com'},
         {name:'wangwu',age:13,mail:'789@123.com'},
       ]
+    }
+  },
+  methods: {
+    remove(index){
+      console.log('click')
+      this.items.splice(index,1)
     }
   }
 };
