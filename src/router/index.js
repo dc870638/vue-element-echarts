@@ -22,6 +22,10 @@ const routes = [
   {
     path:'/echarts',
     component:Echarts
+  },
+  {
+    path: '/shopcart',
+    component: () => import('../views/Shopcart.vue')
   }
 ]
 
