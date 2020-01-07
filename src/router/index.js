@@ -26,6 +26,10 @@ const routes = [
   {
     path: '/shopcart',
     component: () => import('../views/Shopcart.vue')
+  },
+  {
+    path: '/collapse',
+    component: () => import('../views/Collapse.vue')
   }
 ]
 
