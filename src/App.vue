@@ -5,7 +5,8 @@
       <router-link to="/about">About</router-link> |
       <router-link to="/echarts">Echarts</router-link> |
       <router-link to="/shopcart">购物车</router-link> |
-      <router-link to="/collapse">折叠面板</router-link>
+      <router-link to="/collapse">折叠面板</router-link>｜
+      <router-link to="/pages">分页</router-link>
     </div>
     <router-view/>
   </div>

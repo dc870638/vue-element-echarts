@@ -30,6 +30,10 @@ const routes = [
   {
     path: '/collapse',
     component: () => import('../views/Collapse.vue')
+  },
+  {
+    path:'/pages',
+    component: () => import('../views/Page.vue')
   }
 ]
 
