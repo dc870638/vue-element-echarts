@@ -20,6 +20,7 @@
 
 #nav {
   padding: 30px;
+  background-image:linear-gradient(to right,rgba(105, 199, 215,0.8),rgba(133, 194, 199,0.8))
 }
 
 #nav a {

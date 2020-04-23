@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
+    <img alt="Vue logo" src="../assets/logo.png" class="img1">
     <HelloWorld></HelloWorld>
   </div>
 </template>
@@ -16,3 +16,15 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+@keyframes rotation1{
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(360deg);}
+}
+.img1{
+   transform: rotate(360deg);
+    animation: rotation1 3s linear infinite;
+}
+</style>
+
