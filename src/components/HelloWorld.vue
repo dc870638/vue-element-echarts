@@ -17,12 +17,14 @@
 
     <table>
       <thead>
-        <td>qdw</td>
-        <td>qd</td>
-        <td>qwef</td>
+        <td>姓名</td>
+        <td>年龄</td>
+        <td>邮箱</td>
       </thead>
-      <tr>
-        <td v-for='(index,item) in items'>{{}}</td>
+      <tr v-for='(item,index) in items'>
+        <td >{{ item.name }}</td>
+        <td >{{ item.age }}</td>
+        <td >{{ item.mail }}</td>
       </tr>
     </table>
       
